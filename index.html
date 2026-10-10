@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DS Emulator - Pokémon Ultra Sun</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h1 {
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+        .emulator-container {
+            width: 100%;
+            max-width: 800px;
+            height: 600px;
+            background-color: #000000;
+            border: 3px solid #333;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .instructions {
+            margin-top: 15px;
+            max-width: 600px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pokémon Ultra Sun Emulator</h1>
+
+    <div class="emulator-container">
+        <!-- 
+          Using an iframe to load a web-compiled 3DS backend (like EmulatorJS or Citra Web).
+          Replace the src URL below with your preferred web emulator engine or locally hosted framework.
+        -->
+        <iframe src="https://emulatorjs.org" allowfullscreen></iframe>
+    </div>
+
+    <div class="instructions">
+        <p><strong>Controls:</strong> Configure your keys inside the emulator settings menu. Use full-screen mode for the best experience.</p>
+        <p><em>Note: Performance depends entirely on your browser's WebGL capabilities and your computer's hardware.</em></p>
+    </div>
+
+</body>
+</html>
